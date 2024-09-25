@@ -25,7 +25,7 @@ export default function RenovationsRemodeling() {
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-4xl font-extrabold text-center mb-8 text-gray-800">Transforming Spaces, Revitalizing Homes</h2>
         <p className="text-lg mb-8 text-gray-600 leading-relaxed" data-aos="fade-up">
-          Whether it's updating a single room or a complete property overhaul, we have the expertise to bring new life into your existing spaces. Our remodeling services range from kitchens and bathrooms to entire floor plan redesigns.
+          Whether it&apos;s updating a single room or a complete property overhaul, we have the expertise to bring new life into your existing spaces. Our remodeling services range from kitchens and bathrooms to entire floor plan redesigns.
         </p>
         <h3 className="text-3xl font-bold mb-4 text-gray-800" data-aos="fade-up">What We Do:</h3>
         <ul className="list-disc list-inside mb-8 text-lg text-gray-600" data-aos="fade-up">
@@ -35,7 +35,7 @@ export default function RenovationsRemodeling() {
         </ul>
         <div className="text-center">
           <a href="/contact" className="inline-block px-8 py-3 bg-gold text-white font-semibold rounded-md" data-aos="fade-up">
-            Let's Revitalize Your Space
+            Let&apos;s Revitalize Your Space
           </a>
         </div>
       </div>

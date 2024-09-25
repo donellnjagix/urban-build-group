@@ -59,7 +59,7 @@ const About = () => {
             </div>
             <div className="core-value-item bg-gray-100 p-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105" data-aos="fade-up" data-aos-delay="400">
               <h3 className="text-2xl font-semibold mb-4">Customer Satisfaction</h3>
-              <p>We prioritize our clients' needs, communicate openly, and exceed their expectations.</p>
+              <p>We prioritize our clients&apos; needs, communicate openly, and exceed their expectations.</p>
             </div>
           </div>
         </div>

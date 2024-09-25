@@ -35,7 +35,7 @@ export default function FundraisingAssistance() {
         </ul>
         <div className="text-center">
           <a href="/contact" className="inline-block px-8 py-3 bg-gold text-white font-semibold rounded-md" data-aos="fade-up">
-            Let's Discuss Your Funding Needs
+            Let&apos;s Discuss Your Funding Needs
           </a>
         </div>
       </div>
