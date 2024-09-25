@@ -5,6 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --gold: #D4AF37; /* Custom gold color */
+  --gold-hover: #b9972b; /* Darker gold color on hover */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,5 +25,14 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Custom gold button styles */
+  .bg-gold {
+    background-color: var(--gold);
+  }
+
+  .hover\:bg-gold-600:hover {
+    background-color: var(--gold-hover);
   }
 }

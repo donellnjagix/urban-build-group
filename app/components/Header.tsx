@@ -1,7 +1,7 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FiPhone, FiMenu, FiX } from 'react-icons/fi'; // Import phone and menu icons
+import { FiPhone, FiMenu, FiX, FiChevronDown } from 'react-icons/fi'; // Import icons
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,33 +16,30 @@ const Header: React.FC = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-4">
+        <nav className="hidden md:flex items-center space-x-8">
           <a href="/" className="text-black hover:text-gray-600">Home</a>
           <a href="/about" className="text-black hover:text-gray-600">About</a>
           
           {/* Services Dropdown */}
-          <div className="relative">
-            <button 
-              onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
-              className="text-black hover:text-gray-600"
+          <div className="relative group">
+            <a href="/services" 
+              className="text-black hover:text-gray-600 flex items-center"
             >
-              Services
-            </button>
-            {isServicesDropdownOpen && (
-              <div className="absolute top-full mt-2 bg-white shadow-lg rounded-md p-4">
-                <a href="/Residential" className="block px-4 py-2 text-black hover:bg-gray-100">Residential Construction</a>
-                <a href="/Commercial" className="block px-4 py-2 text-black hover:bg-gray-100">Commercial Construction</a>
-                <a href="/Renovations" className="block px-4 py-2 text-black hover:bg-gray-100">Renovations and Remodeling</a>
-                <a href="/Civil" className="block px-4 py-2 text-black hover:bg-gray-100">Civil Engineering</a>
-                <a href="/Fundraising" className="block px-4 py-2 text-black hover:bg-gray-100">Fundraising Assistance</a>
-                <a href="/real" className="block px-4 py-2 text-black hover:bg-gray-100">Real Estate Marketing</a>
-              </div>
-            )}
+              Services <FiChevronDown className="ml-1" />
+            </a>
+            <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-md p-4 hidden group-hover:block">
+              <a href="/services/residential-construction" className="block px-4 py-2 text-black hover:bg-gray-100">Residential Construction</a>
+              <a href="/services/commercial-construction" className="block px-4 py-2 text-black hover:bg-gray-100">Commercial Construction</a>
+              <a href="/services/renovations-remodeling" className="block px-4 py-2 text-black hover:bg-gray-100">Renovations and Remodeling</a>
+              <a href="/services/civil-engineering" className="block px-4 py-2 text-black hover:bg-gray-100">Civil Engineering</a>
+              <a href="/services/fundraising-assistance" className="block px-4 py-2 text-black hover:bg-gray-100">Fundraising Assistance</a>
+              <a href="/services/real-estate-marketing" className="block px-4 py-2 text-black hover:bg-gray-100">Real Estate Marketing</a>
+            </div>
           </div>
 
           <a href="/contact" className="text-black hover:text-gray-600">Contact</a>
           {/* Contact Us Button */}
-          <button className="bg-gold text-white px-4 py-2 rounded flex items-center space-x-2 hover:bg-gold-600 ml-4">
+          <button className="bg-gold text-white px-6 py-2 rounded flex items-center space-x-2 hover:bg-gold-600 ml-4">
             <FiPhone className="text-white" />
             <span>Contact Us</span>
           </button>
@@ -66,9 +63,9 @@ const Header: React.FC = () => {
           <div className="relative">
             <button 
               onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
-              className="block text-black hover:text-gray-600 w-full text-left"
+              className="block text-black hover:text-gray-600 w-full text-left flex items-center"
             >
-              Services
+              Services <FiChevronDown className="ml-1" />
             </button>
             {isServicesDropdownOpen && (
               <div className="mt-2 bg-white shadow-lg rounded-md p-4">
