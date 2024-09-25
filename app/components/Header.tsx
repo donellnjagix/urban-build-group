@@ -1,0 +1,97 @@
+'use client'
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { FiPhone, FiMenu, FiX } from 'react-icons/fi'; // Import phone and menu icons
+
+const Header: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+
+  return (
+    <header className="bg-white shadow-md p-4">
+      <div className="container mx-auto flex items-center justify-between">
+        {/* Logo */}
+        <div className="flex items-center">
+          <Image src="/images/logo.webp" alt="Logo" width={50} height={50} />
+        </div>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center space-x-4">
+          <a href="/" className="text-black hover:text-gray-600">Home</a>
+          <a href="/about" className="text-black hover:text-gray-600">About</a>
+          
+          {/* Services Dropdown */}
+          <div className="relative">
+            <button 
+              onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
+              className="text-black hover:text-gray-600"
+            >
+              Services
+            </button>
+            {isServicesDropdownOpen && (
+              <div className="absolute top-full mt-2 bg-white shadow-lg rounded-md p-4">
+                <a href="/Residential" className="block px-4 py-2 text-black hover:bg-gray-100">Residential Construction</a>
+                <a href="/Commercial" className="block px-4 py-2 text-black hover:bg-gray-100">Commercial Construction</a>
+                <a href="/Renovations" className="block px-4 py-2 text-black hover:bg-gray-100">Renovations and Remodeling</a>
+                <a href="/Civil" className="block px-4 py-2 text-black hover:bg-gray-100">Civil Engineering</a>
+                <a href="/Fundraising" className="block px-4 py-2 text-black hover:bg-gray-100">Fundraising Assistance</a>
+                <a href="/real" className="block px-4 py-2 text-black hover:bg-gray-100">Real Estate Marketing</a>
+              </div>
+            )}
+          </div>
+
+          <a href="/contact" className="text-black hover:text-gray-600">Contact</a>
+          {/* Contact Us Button */}
+          <button className="bg-gold text-white px-4 py-2 rounded flex items-center space-x-2 hover:bg-gold-600 ml-4">
+            <FiPhone className="text-white" />
+            <span>Contact Us</span>
+          </button>
+        </nav>
+
+        {/* Mobile Menu Icon */}
+        <div className="md:hidden">
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-black focus:outline-none">
+            {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Navigation */}
+      {isMenuOpen && (
+        <nav className="md:hidden mt-4 space-y-4">
+          <a href="/" className="block text-black hover:text-gray-600">Home</a>
+          <a href="/about" className="block text-black hover:text-gray-600">About</a>
+          
+          {/* Services Dropdown for Mobile */}
+          <div className="relative">
+            <button 
+              onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
+              className="block text-black hover:text-gray-600 w-full text-left"
+            >
+              Services
+            </button>
+            {isServicesDropdownOpen && (
+              <div className="mt-2 bg-white shadow-lg rounded-md p-4">
+                <a href="/services/residential-construction" className="block px-4 py-2 text-black hover:bg-gray-100">Residential Construction</a>
+                <a href="/services/commercial-construction" className="block px-4 py-2 text-black hover:bg-gray-100">Commercial Construction</a>
+                <a href="/services/renovations-remodeling" className="block px-4 py-2 text-black hover:bg-gray-100">Renovations and Remodeling</a>
+                <a href="/services/civil-engineering" className="block px-4 py-2 text-black hover:bg-gray-100">Civil Engineering</a>
+                <a href="/services/fundraising-assistance" className="block px-4 py-2 text-black hover:bg-gray-100">Fundraising Assistance</a>
+                <a href="/services/real-estate-marketing" className="block px-4 py-2 text-black hover:bg-gray-100">Real Estate Marketing</a>
+              </div>
+            )}
+          </div>
+
+          <a href="/contact" className="block text-black hover:text-gray-600">Contact</a>
+          {/* Contact Us Button */}
+          <button className="bg-gold text-white px-4 py-2 rounded flex items-center space-x-2 hover:bg-gold-600 w-full justify-center">
+            <FiPhone className="text-white" />
+            <span>Contact Us</span>
+          </button>
+        </nav>
+      )}
+    </header>
+  );
+};
+
+export default Header;

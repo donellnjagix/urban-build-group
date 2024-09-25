@@ -1,101 +1,134 @@
-import Image from "next/image";
+'use client'
+import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration (in ms)
+      once: true, // Animation only happens once
+    });
+  }, []);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  return (
+    <div>
+      {/* Hero Section - Video as Background */}
+      <section className="hero relative bg-blue-900 text-white py-32">
+        {/* Background Video */}
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          src="/video/image3_animation (1).mp4" // Replace with your video path
+          autoPlay
+          muted
+          loop
+          playsInline
+        ></video>
+
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/70 to-blue-900/30 z-10"></div>
+
+        {/* Content on top of the video */}
+        <div className="relative container mx-auto px-6 text-center z-20">
+          <h1 className="text-6xl font-extrabold tracking-tight mb-4" data-aos="fade-up">
+            Reshaping the East African Construction Landscape
+          </h1>
+          <p className="text-xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+            Urban Build Group is a consortium of four leading construction companies dedicated to innovation and excellence.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* About Us Section */}
+      <section className="about-us py-16 bg-gray-50">
+        <div className="container mx-auto px-6 text-center max-w-4xl">
+          <h2 className="text-4xl font-bold mb-6 text-blue-900" data-aos="fade-up">
+            About Urban Build Group
+          </h2>
+          <p className="text-lg mb-6 leading-relaxed text-gray-700" data-aos="fade-up" data-aos-delay="100">
+            Urban Build Group is dedicated to reshaping the construction landscape across East Africa by leveraging our collective experience, expertise, and resources.
+          </p>
+          <p className="text-lg leading-relaxed text-gray-700" data-aos="fade-up" data-aos-delay="200">
+            Our goal is to enhance communities, drive economic growth, and deliver sustainable projects that benefit future generations.
+          </p>
+        </div>
+      </section>
+
+      {/* Services Overview */}
+      <section className="services py-16 bg-white">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold mb-12 text-blue-900" data-aos="fade-up">
+            Our Services
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { title: "Residential Construction", desc: "We build quality residential properties tailored to our clients’ visions." },
+              { title: "Commercial Construction", desc: "From offices to industrial facilities, we deliver projects that meet the highest standards." },
+              { title: "Renovations and Remodeling", desc: "We enhance the functionality and value of properties through expert renovations." },
+              { title: "Civil Engineering", desc: "Our team handles infrastructure projects like roads, bridges, and utilities." },
+              { title: "Fundraising Assistance", desc: "We help secure funding through our network of investors and financial institutions." },
+              { title: "Real Estate Marketing", desc: "Our marketing team promotes real estate projects for maximum visibility and returns." }
+            ].map((service, index) => (
+              <div
+                key={index}
+                className="service-item bg-white shadow-lg rounded-lg p-8 transition transform hover:scale-105"
+                data-aos="fade-up"
+                data-aos-delay={`${index * 100}`}
+              >
+                <h3 className="text-2xl font-semibold mb-4 text-blue-900">{service.title}</h3>
+                <p className="text-gray-700">{service.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="call-to-action bg-blue-900 text-white py-20">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold mb-6" data-aos="fade-up">
+            Contact Us for Your Construction Needs
+          </h2>
+          <p className="text-lg mb-8 max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+            Let Urban Build Group bring your construction project to life with our expertise and dedication to quality.
+          </p>
+          <Link href="/contact" legacyBehavior>
+            <a
+              className="bg-white text-blue-900 px-8 py-4 rounded-md font-semibold shadow-lg transition hover:bg-gray-100"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              Get in Touch
+            </a>
+          </Link>
+        </div>
+      </section>
+
+      {/* Add your custom styles */}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .hero {
+            padding: 16rem 0;
+          }
+          h1 {
+            font-size: 2.5rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          h1 {
+            font-size: 4.5rem;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      `}</style>
     </div>
   );
 }
