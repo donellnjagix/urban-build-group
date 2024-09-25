@@ -83,7 +83,7 @@ export default function Contact() {
           <h2 className="text-xl font-semibold text-gray-700 mb-4">Company Details</h2>
           <p className="text-gray-600"><span className="font-medium">Email:</span> info@urbanbuildgroup.com</p>
           <p className="text-gray-600 mt-2"><span className="font-medium">Phone:</span> +254 790 944 411</p>
-          <p className="text-gray-600 mt-2"><span className="font-medium">Address:</span> Nairobi, Kenya</p>
+          <p className="text-gray-600 mt-2"><span className="font-medium">Address:</span> Skyrise Business Center, Western Heights, Westlands</p>
 
           <div className="mt-6">
             <h3 className="text-lg font-semibold text-gray-700 mb-2">Working Hours</h3>

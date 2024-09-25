@@ -64,7 +64,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <span className="font-bold">Address: </span>123 Main St, Nairobi, Kenya
+              <span className="font-bold">Address: </span>Skyrise Business Center, Western Heights, Westlands
             </li>
           </ul>
 

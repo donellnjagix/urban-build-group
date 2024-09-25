@@ -1,3 +1,4 @@
+// Header Component
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
@@ -7,8 +8,18 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
+  const handleMouseEnter = () => {
+    setIsServicesDropdownOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setTimeout(() => {
+      setIsServicesDropdownOpen(false);
+    }, 300); // Delay before closing
+  };
+
   return (
-    <header className="bg-white shadow-md p-4">
+    <header className="bg-white shadow-md p-4 z-50 relative">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
@@ -21,13 +32,22 @@ const Header: React.FC = () => {
           <a href="/about" className="text-black hover:text-gray-600">About</a>
           
           {/* Services Dropdown */}
-          <div className="relative group">
-            <a href="/services" 
+          <div 
+            className="relative group" 
+            onMouseEnter={handleMouseEnter} 
+            onMouseLeave={handleMouseLeave} 
+          >
+            <a 
+              href="/services" 
               className="text-black hover:text-gray-600 flex items-center"
             >
               Services <FiChevronDown className="ml-1" />
             </a>
-            <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-md p-4 hidden group-hover:block">
+            <div 
+              className={`absolute top-full left-0 mt-2 bg-white shadow-lg rounded-md p-4 transition-opacity duration-300 ease-in-out z-50 ${
+                isServicesDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+              }`}
+            >
               <a href="/services/residential-construction" className="block px-4 py-2 text-black hover:bg-gray-100">Residential Construction</a>
               <a href="/services/commercial-construction" className="block px-4 py-2 text-black hover:bg-gray-100">Commercial Construction</a>
               <a href="/services/renovations-remodeling" className="block px-4 py-2 text-black hover:bg-gray-100">Renovations and Remodeling</a>
@@ -68,7 +88,7 @@ const Header: React.FC = () => {
               Services <FiChevronDown className="ml-1" />
             </button>
             {isServicesDropdownOpen && (
-              <div className="mt-2 bg-white shadow-lg rounded-md p-4">
+              <div className="mt-2 bg-white shadow-lg rounded-md p-4 z-50">
                 <a href="/services/residential-construction" className="block px-4 py-2 text-black hover:bg-gray-100">Residential Construction</a>
                 <a href="/services/commercial-construction" className="block px-4 py-2 text-black hover:bg-gray-100">Commercial Construction</a>
                 <a href="/services/renovations-remodeling" className="block px-4 py-2 text-black hover:bg-gray-100">Renovations and Remodeling</a>
