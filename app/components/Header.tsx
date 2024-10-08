@@ -48,12 +48,12 @@ const Header: React.FC = () => {
                 isServicesDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
               }`}
             >
-              <a href="/services/residential-construction" className="block px-4 py-2 text-black hover:bg-gray-100">Residential Construction</a>
-              <a href="/services/commercial-construction" className="block px-4 py-2 text-black hover:bg-gray-100">Commercial Construction</a>
-              <a href="/services/renovations-remodeling" className="block px-4 py-2 text-black hover:bg-gray-100">Renovations and Remodeling</a>
-              <a href="/services/civil-engineering" className="block px-4 py-2 text-black hover:bg-gray-100">Civil Engineering</a>
-              <a href="/services/fundraising-assistance" className="block px-4 py-2 text-black hover:bg-gray-100">Fundraising Assistance</a>
-              <a href="/services/real-estate-marketing" className="block px-4 py-2 text-black hover:bg-gray-100">Real Estate Marketing</a>
+              <a href="/Residential" className="block px-4 py-2 text-black hover:bg-gray-100">Residential Construction</a>
+              <a href="/Commercial" className="block px-4 py-2 text-black hover:bg-gray-100">Commercial Construction</a>
+              <a href="/Renovations" className="block px-4 py-2 text-black hover:bg-gray-100">Renovations and Remodeling</a>
+              <a href="/Civil" className="block px-4 py-2 text-black hover:bg-gray-100">Civil Engineering</a>
+              <a href="/Fundraising" className="block px-4 py-2 text-black hover:bg-gray-100">Fundraising Assistance</a>
+              <a href="/Real" className="block px-4 py-2 text-black hover:bg-gray-100">Real Estate Marketing</a>
             </div>
           </div>
 
