@@ -32,7 +32,7 @@ export default function Services() {
             title="Residential Construction" 
             description="From single-family homes to multi-unit developments, we build quality properties reflecting your vision." 
             link="/services/residential-construction"
-            image="/images/image2.png" 
+            image="/downloads/houses.jpg" 
             imagePosition="right"
             aos="fade-up" // Add the AOS attribute here
           />
@@ -40,7 +40,7 @@ export default function Services() {
             title="Commercial Construction" 
             description="We deliver high-functionality commercial buildings, offices, and retail spaces." 
             link="/services/commercial-construction"
-            image="/images/image2.png" 
+            image="/downloads/construction2.jpg" 
             imagePosition="left"
             aos="fade-up"
           />
@@ -48,7 +48,7 @@ export default function Services() {
             title="Renovations and Remodeling" 
             description="Breathing new life into properties through our renovation and remodeling expertise." 
             link="/services/renovations-remodeling"
-            image="/images/image2.png" 
+            image="/downloads/construction3.jpg" 
             imagePosition="right"
             aos="fade-up"
           />
@@ -56,7 +56,7 @@ export default function Services() {
             title="Civil Engineering" 
             description="Infrastructure projects including roads, bridges, and utilities for community development." 
             link="/services/civil-engineering"
-            image="/images/image2.png" 
+            image="/downloads/civil.jpg" 
             imagePosition="left"
             aos="fade-up"
           />
@@ -64,7 +64,7 @@ export default function Services() {
             title="Fundraising Assistance" 
             description="Providing financial support through our network of investors and institutions." 
             link="/services/fundraising-assistance"
-            image="/images/image2.png" 
+            image="/downloads/fund.jpg" 
             imagePosition="right"
             aos="fade-up"
           />
@@ -72,7 +72,7 @@ export default function Services() {
             title="Real Estate Marketing" 
             description="Promoting real estate projects effectively through innovative marketing strategies." 
             link="/services/real-estate-marketing"
-            image="/images/image2.png" 
+            image="/downloads/land.jpg" 
             imagePosition="left"
             aos="fade-up"
           />
