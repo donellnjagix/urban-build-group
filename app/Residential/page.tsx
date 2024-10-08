@@ -13,7 +13,7 @@ export default function ResidentialConstruction() {
       {/* Hero Section */}
       <div
         className="relative h-[500px] bg-cover bg-center flex items-center justify-center text-white"
-        style={{ backgroundImage: "url('/images/residential-hero.png')" }}
+        style={{ backgroundImage: "url('/downloads/houses.jpg')" }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-center">

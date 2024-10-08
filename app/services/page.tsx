@@ -31,7 +31,7 @@ export default function Services() {
           <ServiceCard 
             title="Residential Construction" 
             description="From single-family homes to multi-unit developments, we build quality properties reflecting your vision." 
-            link="/services/residential-construction"
+            link="/Residential"
             image="/downloads/houses.jpg" 
             imagePosition="right"
             aos="fade-up" // Add the AOS attribute here
@@ -39,7 +39,7 @@ export default function Services() {
           <ServiceCard 
             title="Commercial Construction" 
             description="We deliver high-functionality commercial buildings, offices, and retail spaces." 
-            link="/services/commercial-construction"
+            link="/Commercial"
             image="/downloads/construction2.jpg" 
             imagePosition="left"
             aos="fade-up"
@@ -47,7 +47,7 @@ export default function Services() {
              <ServiceCard 
             title="Renovations and Remodeling" 
             description="Breathing new life into properties through our renovation and remodeling expertise." 
-            link="/services/renovations-remodeling"
+            link="/Renovations"
             image="/downloads/construction3.jpg" 
             imagePosition="right"
             aos="fade-up"
@@ -55,7 +55,7 @@ export default function Services() {
           <ServiceCard 
             title="Civil Engineering" 
             description="Infrastructure projects including roads, bridges, and utilities for community development." 
-            link="/services/civil-engineering"
+            link="/Civil"
             image="/downloads/civil.jpg" 
             imagePosition="left"
             aos="fade-up"
@@ -63,7 +63,7 @@ export default function Services() {
           <ServiceCard 
             title="Fundraising Assistance" 
             description="Providing financial support through our network of investors and institutions." 
-            link="/services/fundraising-assistance"
+            link="/Fundraising"
             image="/downloads/fund.jpg" 
             imagePosition="right"
             aos="fade-up"
@@ -71,7 +71,7 @@ export default function Services() {
           <ServiceCard 
             title="Real Estate Marketing" 
             description="Promoting real estate projects effectively through innovative marketing strategies." 
-            link="/services/real-estate-marketing"
+            link="/Real"
             image="/downloads/land.jpg" 
             imagePosition="left"
             aos="fade-up"
