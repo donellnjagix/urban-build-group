@@ -183,12 +183,7 @@ interface ProjectDetailsProps {
       return notFound();
     }
   
-    const [isAnimating, setIsAnimating] = useState(false);
-  
-    useEffect(() => {
-      setIsAnimating(true);
-      return () => setIsAnimating(false);
-    }, [projectId]);
+   
   
     return (
       <div className="min-h-screen bg-gray-100">
