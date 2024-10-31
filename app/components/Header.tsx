@@ -57,6 +57,7 @@ const Header: React.FC = () => {
             </div>
           </div>
 
+          <a href="/project" className="text-black hover:text-gray-600">Project</a>
           <a href="/contact" className="text-black hover:text-gray-600">Contact</a>
           {/* Contact Us Button */}
           <button className="bg-gold text-white px-6 py-2 rounded flex items-center space-x-2 hover:bg-gold-600 ml-4">
@@ -99,6 +100,7 @@ const Header: React.FC = () => {
             )}
           </div>
 
+          <a href="/project" className="block text-black hover:text-gray-600">Project</a>
           <a href="/contact" className="block text-black hover:text-gray-600">Contact</a>
           {/* Contact Us Button */}
           <button className="bg-gold text-white px-4 py-2 rounded flex items-center space-x-2 hover:bg-gold-600 w-full justify-center">
