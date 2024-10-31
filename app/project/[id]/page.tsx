@@ -1,6 +1,6 @@
 'use client'
 import { notFound } from 'next/navigation';
-import { useEffect, useState } from 'react';
+//import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules'; // Import directly from 'swiper' 
 import 'swiper/swiper-bundle.css';
