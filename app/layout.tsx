@@ -10,7 +10,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
        <Header />
         <main>{children}</main>
-        <WhatsAppButton /> s
+        <WhatsAppButton /> 
       <Footer />
       </body>
     </html>

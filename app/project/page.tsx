@@ -10,53 +10,32 @@ interface Project {
   description: string;
   image: string;
   category: 'Service' | 'Individual';
-  status: 'Ongoing' | 'Finished'; // Added status field
+  status: 'Ongoing' | 'Finished' | 'Conceptual'; // Added Conceptual status
 }
 
 const projectsData: Project[] = [
-  {
-    id: 1,
-    title: 'Building Works',
-    description: 'A luxurious modern villa featuring cutting-edge architecture and sustainable materials.',
-    image: '/downloads/construction2.jpg',
-    category: 'Service',
-    status: 'Ongoing',
-  },
-  {
-    id: 2,
-    title: 'Doors and Windows',
-    description: 'A high-rise office complex located in the heart of the city, offering premium commercial space.',
-    image: '/downloads/construction3.jpg',
-    category: 'Individual',
-    status: 'Finished',
-  },
+
+  
   {
     id: 3,
-    title: 'Finishes',
+    title: 'Finishes And Fit Outs',
     description: 'A landmark bridge construction project designed for enhanced transportation and connectivity.',
-    image: '/downloads/construction4.jpg',
+    image: '/fit.jpg',
     category: 'Service',
     status: 'Ongoing',
   },
-  {
-    id: 4,
-    title: 'Fit Outs',
-    description: 'A unique interior design for residential and commercial spaces.',
-    image: '/downloads/construction4.jpg',
-    category: 'Individual',
-    status: 'Finished',
-  },
+
   {
     id: 5,
     title: 'Civil Works',
     description: 'Road infrastructure improvement projects for better connectivity.',
-    image: '/downloads/construction4.jpg',
+    image: '/civil.jpg',
     category: 'Service',
     status: 'Ongoing',
   },
   {
     id: 6,
-    title: 'Kenol',
+    title: '4 bedroom  villa Kenol',
     description: 'A unique interior design for residential and commercial spaces.',
     image: '/new/KENOL.jpg',
     category: 'Individual',
@@ -72,15 +51,15 @@ const projectsData: Project[] = [
   },
   {
     id: 8,
-    title: 'Mitunguu',
+    title: 'Commercial Rental Properties',
     description: 'A unique interior design for residential and commercial spaces.',
     image: '/new/MITUNGU.jpg',
     category: 'Individual',
-    status: 'Finished',
+    status: 'Conceptual',
   },
   {
     id: 9,
-    title: 'Winners Gym',
+    title: 'Gym',
     description: 'A unique interior design for residential and commercial spaces.',
     image: '/new/GYM.jpg',
     category: 'Individual',
@@ -89,7 +68,17 @@ const projectsData: Project[] = [
 
   {
     id: 10,
-    title: 'Bungalow',
+    title: '4 Bedroom Villa - Kithoka Meru',
+    description: 'A beautiful 4-bedroom villa, spanning 145 sqm per floor, located in the serene Kithoka Estate, Meru. Built with modern architecture and comfort in mind.',
+    image: '/kithoka/k1.jpeg', // Using the first image as the main image
+    category: 'Individual',
+    status: 'Conceptual', // Or update with actual status if different
+  },
+  
+
+  {
+    id: 11,
+    title: '5 Bedroom Villa - Kikuyu',
     description: 'A unique interior design for residential and commercial spaces.',
     image: '/new/JAMES02.jpg',
     category: 'Individual',

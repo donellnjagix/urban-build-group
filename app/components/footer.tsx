@@ -10,7 +10,7 @@ export default function Footer() {
         {/* Logo Section */}
         <div className="footer-logo">
           <Image
-            src="/images/logo.webp" // Replace with your logo path
+            src="/logo/urban.jpg" // Replace with your logo path
             alt="Urban Build Group Logo"
             width={150}
             height={75}

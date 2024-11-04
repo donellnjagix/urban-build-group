@@ -20,30 +20,96 @@ interface Project {
 const projectsData: Project[] = [
 
 
-    {
+      {
         id: 1,
-        title: 'Modern Villa',
+        title: 'Building Works',
         description: 'A luxurious modern villa featuring cutting-edge architecture and sustainable materials.',
         media: [
           '/downloads/construction2.jpg',
+          '/downloads/villa-interior.jpg',
           '/downloads/villa-video.mp4',
-          '/downloads/villa-2.jpg',
         ],
         content: [
-          'Designed for energy efficiency with solar panels.',
-          'Incorporated sustainable materials throughout the construction.',
-          'Features an open floor plan with panoramic views.',
-          'Completed within budget and ahead of schedule.',
+          'Incorporates sustainable materials and energy-efficient systems.',
+          'Designed for high-end residential living with expansive layouts.',
+          'Features modern, eco-friendly architecture and design.',
+          'Project ongoing with advanced structural work completed.',
         ],
-        client: 'ABC Construction',
-        location: 'California, USA',
-        duration: '12 months',
-        completionDate: 'June 2023',
+        client: 'XYZ Architects',
+        location: 'Malibu, USA',
+        duration: '18 months',
+        completionDate: 'Expected December 2024',
       },
       {
+        id: 2,
+        title: 'Doors and Windows',
+        description: 'A high-rise office complex located in the heart of the city, offering premium commercial space.',
+        media: [
+          '/downloads/construction3.jpg',
+          '/downloads/office-exterior.jpg',
+          '/downloads/office-video.mp4',
+        ],
+        content: [
+          'Completed with top-quality materials and finishes.',
+          'Enhanced natural lighting with floor-to-ceiling windows.',
+          'Equipped with noise-cancellation doors and energy-efficient glass.',
+          'Completed within timeline and exceeds safety standards.',
+        ],
+        client: 'Urban Development Corp.',
+        location: 'New York, USA',
+        duration: '24 months',
+        completionDate: 'September 2023',
+      },
+      {
+        id: 3,
+        title: 'Finishes And Fit Outs',
+        description: 'A landmark bridge construction project designed for enhanced transportation and connectivity.',
+        media: [
+          '/downloads/construction4.jpg',
+          '/downloads/bridge-day.jpg',
+          '/downloads/bridge-video.mp4',
+          '/downloads/construction4.jpg',
+          '/downloads/fitout-lobby.jpg',
+          '/downloads/fitout-video.mp4',
+        ],
+        content: [
+          'Innovative design enhancing structural stability and aesthetics.',
+          'Features high-quality, weather-resistant finishes.',
+          'Aims to support regional transport links and improve traffic flow.',
+          'Ongoing with focus on surface finishing and final safety checks.',
+        ],
+        client: 'National Infrastructure Ltd.',
+        location: 'Texas, USA',
+        duration: '30 months',
+        completionDate: 'Expected June 2025',
+      },
+     
+      {
+        id: 5,
+        title: 'Civil Works',
+        description: 'Road infrastructure improvement projects for better connectivity.',
+        media: [
+          '/downloads/construction4.jpg',
+          '/downloads/road-project.jpg',
+          '/downloads/road-video.mp4',
+        ],
+        content: [
+          'Focuses on improving road safety and reducing travel time.',
+          'Utilizes durable, low-maintenance materials for road surfacing.',
+          'Ongoing works include widening lanes and adding pedestrian paths.',
+          'Expected to enhance regional connectivity upon completion.',
+        ],
+        client: 'RoadWorks Global',
+        location: 'Nairobi, Kenya',
+        duration: '12 months',
+        completionDate: 'Expected October 2024',
+      },
+
+
+      {
         id: 6,
-        title: 'Kenol',
-        description: 'A luxurious modern villa featuring cutting-edge architecture and sustainable materials.',
+        title: 'Kenol Villa',
+        description: 'A stunning 4-bedroom villa spanning 165 sqm per level, designed with modern elegance and spacious living in mind.',
         media: [
           '/kenol/KENKENOL01.jpg',
           '/kenol/KENKENOL03.jpg',
@@ -51,19 +117,24 @@ const projectsData: Project[] = [
           '/kenol/KENKENOL09.jpg',
           '/kenol/KENKENOL12.jpg',
           '/kenol/KENKENOL18.jpg',
+          '/kenol/KENKENOL19.jpg',
           '/kenol/vid.mp4',
+          '/kenol/vid22.mp4',
         ],
         content: [
-          'Designed for energy efficiency with solar panels.',
-          'Incorporated sustainable materials throughout the construction.',
-          'Features an open floor plan with panoramic views.',
-          'Completed within budget and ahead of schedule.',
+          'Double volume lounge for an expansive living area.',
+          'Open-plan lounge, dining, and kitchen, complete with pantry and laundry room.',
+          '4 spacious bedrooms, each with ensuite bathrooms.',
+          'Includes a home office and family room for added versatility.',
+          'Cloakroom on the main floor.',
+          'Roof terrace with pergolas, perfect for outdoor relaxation.',
         ],
-        client: 'ABC Construction',
-        location: 'California, USA',
+        client: 'Individual Client',
+        location: 'Kenol, Kenya',
         duration: '12 months',
-        completionDate: 'June 2023',
+        completionDate: 'June 2024',
       },
+      
 
       {
         id: 7,
@@ -93,7 +164,7 @@ const projectsData: Project[] = [
 
       {
         id: 8,
-        title: 'Mitunguu',
+        title: 'Commercial Rental Properties',
         description: 'A luxurious modern villa featuring cutting-edge architecture and sustainable materials.',
         media: [
           '/Mitunguu/m1.jpg',
@@ -116,8 +187,8 @@ const projectsData: Project[] = [
       },
 
       {
-        id: 8,
-        title: 'Winners GYM',
+        id: 9,
+        title: 'GYM',
         description: 'A luxurious modern villa featuring cutting-edge architecture and sustainable materials.',
         media: [
           '/gym/g1.jpg',
@@ -140,29 +211,60 @@ const projectsData: Project[] = [
       },
 
       {
-        id: 9,
-        title: 'Bungalow',
-        description: 'A luxurious modern villa featuring cutting-edge architecture and sustainable materials.',
+        id: 10,
+        title: '4 Bedroom Villa - Kithoka Meru',
+        description: 'A beautiful 4-bedroom villa, spanning 145 sqm per floor, located in the serene Kithoka Estate, Meru. Built with modern architecture and comfort in mind.',
         media: [
-          '/bungalow/JAMES01.jpg',
-         '/bungalow/JAMES02.jpg',
-          '/bungalow/JAMES03.jpg',
-         '/bungalow/JAMES04.jpg',
-        '/bungalow/JAMES05.jpg',
-         '/bungalow/JAMES06.jpg',
+          '/kithoka/k1.jpeg',
+          '/kithoka/k2.jpeg',
+          '/kithoka/k3.jpeg',
+          '/kithoka/k4.jpeg',
+          '/kithoka/k5.jpeg',
+          '/kithoka/k6.jpeg',
         ],
         content: [
-          'Designed for energy efficiency with solar panels.',
-          'Incorporated sustainable materials throughout the construction.',
-          'Features an open floor plan with panoramic views.',
-          'Completed within budget and ahead of schedule.',
+          'Spacious open-plan lounge, dining, and kitchen area for family gatherings.',
+          'Double volume entry lobby offering a grand welcome.',
+          'All bedrooms ensuite for added privacy and convenience.',
+          'Includes a family room and dedicated prayer room.',
+          'Features a roof terrace area for outdoor relaxation and gatherings.',
+          'Constructed with a budget of 14.5 million KES.',
         ],
-        client: 'ABC Construction',
-        location: 'California, USA',
-        duration: '12 months',
-        completionDate: 'June 2023',
+        client: 'Individual Client',
+        location: 'Kithoka Estate, Meru, Kenya',
+        duration: '24 months',
+        completionDate: 'September 2024',
       },
-    
+      
+      {
+        id: 11,
+        title: '5 Bedroom Villa - Kikuyu',
+        description: 'A stunning 5-bedroom villa with a modern contemporary design, featuring natural stone accents. Each floor spans 150 sqm, creating a spacious and elegant living environment.',
+        media: [
+          '/kikuyu/vid1.mp4',
+          '/kikuyu/vid2.mp4',
+          '/kikuyu/vid3.mp4',
+          '/kikuyu/kikuyu4.jpeg',
+          '/kikuyu/kikuyu5.jpeg',
+          '/kikuyu/kikuyu6.jpeg',
+        ],
+        content: [
+          'All bedrooms ensuite, offering privacy and luxury.',
+          'Lounge area with ample space for relaxation and gatherings.',
+          'Double volume entry lobby that creates a grand entrance.',
+          'Dining area open to the kitchen, fostering a seamless flow.',
+          'Includes a pantry and dedicated gas chamber for convenience.',
+          'Laundry area for practicality and organization.',
+          'Features a cozy fireplace for added warmth and ambiance.',
+        ],
+        client: 'Individual Client',
+        location: 'Kikuyu, Kenya',
+        duration: '18 months',
+        completionDate: 'December 2024',
+      },
+
+      
+      
     
 
 

@@ -23,7 +23,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <Image src="/images/logo.webp" alt="Logo" width={50} height={50} />
+          <Image src="/logo/urban.jpg" alt="Logo" width={50} height={50} />
         </div>
 
         {/* Desktop Navigation */}

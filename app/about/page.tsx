@@ -30,8 +30,8 @@ const About = () => {
           <h1 className="text-4xl font-bold mb-6">Who We Are</h1>
           <p className="text-lg mb-6">
             Urban Build Group is a collaborative venture comprising four construction companies: 
-            <strong>Travaux Ltd</strong>, <strong>EV Banks Ltd</strong>, <strong>Spyro Enterprises</strong>, and 
-            <strong>Brick&Allied Ltd</strong>.
+            <strong> Travaux Ltd</strong>, <strong>EV Banks Ltd</strong>, <strong>Spyro Enterprises</strong>, and 
+            <strong> Brick&Allied Ltd</strong>.
           </p>
           <p className="text-lg mb-6">
             Together, we are dedicated to reshaping the construction landscape across East Africa, leveraging collective 
@@ -70,31 +70,58 @@ const About = () => {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-6" data-aos="fade-up">Meet Our Companies</h2>
           <p className="text-lg mb-8" data-aos="fade-up">
-            Each company brings its own unique set of skills to the consortium, offering comprehensive solutions to drive 
-            sustainable growth and community enrichment.
+            Each company brings its own unique set of skills to the consortium, offering comprehensive solutions to drive sustainable growth and community enrichment.
           </p>
 
           {/* Companies Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="company bg-white shadow-md rounded-lg p-6 transition-transform duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="100">
-              <h3 className="text-2xl font-semibold mb-4">Travaux Ltd</h3>
-              <p>Specializes in premium construction solutions, focusing on both residential and commercial projects.</p>
-            </div>
-            <div className="company bg-white shadow-md rounded-lg p-6 transition-transform duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="200">
-              <h3 className="text-2xl font-semibold mb-4">EV Banks Ltd</h3>
-              <p>Provides tailored architectural solutions that inspire ambitious developments.</p>
-            </div>
-            <div className="company bg-white shadow-md rounded-lg p-6 transition-transform duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="300">
-              <h3 className="text-2xl font-semibold mb-4">Spyro Enterprises</h3>
-              <p>Offers holistic real estate services, with a focus on sustainability and community-driven projects.</p>
-            </div>
-            <div className="company bg-white shadow-md rounded-lg p-6 transition-transform duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="400">
-              <h3 className="text-2xl font-semibold mb-4">Brick&Allied Ltd</h3>
-              <p>Focuses on real estate marketing and financial planning, using innovative strategies to maximize visibility and engagement.</p>
-            </div>
+            {/* Company Card */}
+            {[
+              {
+                name: 'Travaux Ltd',
+                description: 'Specializes in premium construction solutions, focusing on both residential and commercial projects.',
+                imgSrc: '/logo/trav.jpg',
+                link: 'https://www.ujenzisolutions.co.ke/',
+              },
+              {
+                name: 'EV Banks Ltd',
+                description: 'Provides tailored architectural solutions that inspire ambitious developments.',
+                imgSrc: 'logo/ev.jpg',
+                link: '#',
+              },
+              {
+                name: 'Spyro Enterprises',
+                description: 'Offers holistic real estate services, with a focus on sustainability and community-driven projects.',
+                imgSrc: 'images/spyro-logo.png',
+                link: '#',
+              },
+              {
+                name: 'Brick&Allied Ltd',
+                description: 'Focuses on real estate marketing and financial planning, using innovative strategies to maximize visibility and engagement.',
+                imgSrc: '/logo/brick.jpg',
+                link: 'https://brickandallied.co.ke/',
+              },
+            ].map((company, index) => (
+              <a
+                key={index}
+                href={company.link}
+                className="company bg-white shadow-lg rounded-lg p-6 transition duration-300 hover:scale-105 relative group"
+                data-aos="fade-up"
+                data-aos-delay={`${(index + 1) * 100}`}
+              >
+                <img src={company.imgSrc} alt={`${company.name} Logo`} className="w-20 h-20 mx-auto mb-4" />
+                <h3 className="text-2xl font-semibold mb-2">{company.name}</h3>
+                <p className="text-sm text-gray-600 mb-4">{company.description}</p>
+                
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-black bg-opacity-10 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+              </a>
+            ))}
           </div>
         </div>
       </section>
+
+
     </div>
   );
 };
