@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faTwitter, faLinkedinIn, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
   return (
@@ -52,15 +52,15 @@ export default function Footer() {
           <h3 className="text-2xl font-semibold mb-4">Contact Us</h3>
           <ul className="space-y-2">
             <li>
-              <span className="font-bold">Phone: </span>+123-456-7890
+              <span className="font-bold">Phone: </span>+254703987774
             </li>
             <li>
               <span className="font-bold">Email: </span>
               <a
-                href="mailto:info@urbanbuildgroup.com"
+                href="mailto: urbanbuildconsult@gmail.com"
                 className="text-gray-300 hover:text-white"
               >
-                info@urbanbuildgroup.com
+                urbanbuildconsult@gmail.com
               </a>
             </li>
             <li>
@@ -97,12 +97,20 @@ export default function Footer() {
                 <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
               </a>
               <a
-                href="https://instagram.com" // Replace with your company's Instagram URL
+                href="https://www.instagram.com/urbanbuild_group?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" // Replace with your company's Instagram URL
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
               >
                 <FontAwesomeIcon icon={faInstagram} size="lg" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@urbanbuildconsult" // Replace with your company's TikTok URL
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white"
+              >
+                <FontAwesomeIcon icon={faTiktok} size="lg" />
               </a>
             </div>
           </div>

@@ -81,8 +81,8 @@ export default function Contact() {
           data-aos-delay="900"
         >
           <h2 className="text-xl font-semibold text-gray-700 mb-4">Company Details</h2>
-          <p className="text-gray-600"><span className="font-medium">Email:</span> info@urbanbuildgroup.com</p>
-          <p className="text-gray-600 mt-2"><span className="font-medium">Phone:</span> +254 790 944 411</p>
+          <p className="text-gray-600"><span className="font-medium">Email:</span> : urbanbuildconsult@gmail.com          </p>
+          <p className="text-gray-600 mt-2"><span className="font-medium">Phone:</span> +254703987774</p>
           <p className="text-gray-600 mt-2"><span className="font-medium">Address:</span> Skyrise Business Center, Western Heights, Westlands</p>
 
           <div className="mt-6">
