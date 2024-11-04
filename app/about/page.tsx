@@ -92,7 +92,7 @@ const About = () => {
               {
                 name: 'Spyro Enterprises',
                 description: 'Offers holistic real estate services, with a focus on sustainability and community-driven projects.',
-                imgSrc: 'images/spyro-logo.png',
+                imgSrc: '/logo/spryo.jpg',
                 link: '#',
               },
               {
