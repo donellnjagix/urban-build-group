@@ -263,6 +263,28 @@ const projectsData: Project[] = [
         completionDate: 'December 2024',
       },
 
+
+      {
+        id: 12,
+        title: 'Meru Bungalow',
+        description: 'An upcountry 2-bedroom bungalow with an additional semi-detached bedsitter unit, covering 110 sqm space.',
+        media: [
+          '/meru/JAMES01.jpg',
+          '/meru/JAMES02.jpg',
+          '/meru/JAMES013.jpg',
+          
+        ],
+        content: [
+          'Designed to provide comfortable living with a focus on simplicity and functionality.',
+          'Includes an additional bedsitter unit for guest accommodation or rental.',
+          'Open-plan layout maximizing space and natural light.',
+          'Concept project reflecting traditional architectural elements blended with modern touches.'
+        ],
+        client: 'Concept Design',
+        location: 'Meru, Kenya',
+        duration: 'N/A (Concept)',
+        completionDate: 'N/A (Concept)'
+      }
       
       
     

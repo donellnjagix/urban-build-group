@@ -85,6 +85,15 @@ const projectsData: Project[] = [
     status: 'Finished',
   },
 
+  {
+    id: 12,
+    title: 'Meru Bungalow',
+    description: 'An upcountry 2-bedroom bungalow with an additional semi-detached bedsitter unit, covering 110 sqm space',
+    image: '/new/GYM.jpg',
+    category: 'Individual',
+    status: 'Finished',
+  },
+
 ];
 
 export default function Projects() {
